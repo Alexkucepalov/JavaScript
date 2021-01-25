@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+ <script>
+	var rub = prompt("Сколько рублей Вы хотите сконвектировать?");
+	rub = parseInt(rub);
+	var euro = prompt("Введите стоимость одного евро в рублях");
+	var dollar = prompt("Введите стоимость одного доллара в рублях");
+	euro = parseInt(euro);
+	dollar = parseInt(dollar);
+	rubToDollars = rub/dollar;
+	rubToEuro = rub/euro;
+	alert(rub + "рублей =" + rubToEuro.toFixed(2) + "евро \n");
+	alert(rub + "рублей =" + rubToDollars.toFixed(2) + "долларов \n"); //toFixed(2)-- 2 цифры после запятой
+  </script>

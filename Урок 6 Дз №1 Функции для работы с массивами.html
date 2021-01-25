@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var n = +prompt("Введите число n")
+  function anEmptyArray(n)
+  {
+    var array = [];
+    for(var i = 1; i <= n; i++)
+    {
+      array.push(i);
+    }
+    return array;
+  }
+
+  function sum(array)
+  {
+    var sum = 0;
+    for(var i = 0; i < array.length; i++)
+    {
+      sum += array[i];  
+    }
+    return sum;
+  }
+
+  function maxNumberArray(n)
+  {
+    var max = array[0];
+    for(var i = 1; i < array.length; i++)
+    {
+      if(array[i] > max)
+      {
+        max = array[i];
+      }
+      
+    }
+    return max;
+  }
+
+    function minNumberArray(n)
+  {
+    var min = array[0];
+    for(var i = 1; i < array.length; i++)
+    {
+      if(array[i] < min)
+      {
+        min = array[i];
+      }
+      
+    }
+    return min;
+  }
+
+  function evenNumbers(array)
+    {
+    var even = [];
+    for(var i = 0; i < array.length; i++)
+    {
+      if(array[i] % 2 == 0)
+      {
+        even.push(array[i]);
+      }  
+    }
+    return even;
+  }
+
+  var array = anEmptyArray(n);
+  alert(array);
+  alert("sum = " + sum(array));
+  alert("max = " + maxNumberArray(n));
+  alert("min = " + minNumberArray(n));
+  alert("evenNumbers= " + evenNumbers(array));
+
+  </script>
+
+
+

@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  function riddles (question, trueAnswer)
+  {
+    var answer = prompt(question)
+    answer = answer.toLowerCase();
+    if (answer == trueAnswer)
+    {
+      alert("Поздравляю! Вы угадали ");
+      NumberOfCorrectAnswers++;
+    }
+    else
+    {
+      alert("К сожалению, ответ неверный "); 
+    }
+  }
+
+  var NumberOfCorrectAnswers = 0;
+  riddles("Внимание загадка.У него четыре ножки.Спинка и сидение.Но он не для качания, А только для сидения. Что это?","стул");
+  riddles("Предлагаем угадать ещё 3 загадки. Висит груша нельзя скушать","лампочка");  
+  riddles("Не огонь, А жжется.","крапива");
+  riddles("Два конца, два кольца, Посредине гвоздик.","ножницы");
+  alert("колчичество правильных ответов = " + NumberOfCorrectAnswers);
+
+  </script>
+  

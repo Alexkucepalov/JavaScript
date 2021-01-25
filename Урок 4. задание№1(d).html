@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  var answer =prompt("Внимание загадка.У него четыре ножки.Спинка и сидение.Но он не для качания, А только для сидения. Что это?")
+  // можно использовать вместо логического "или" команду userAnsver = userAnsver.toLowerCase(); -- заменяет все большие буквы на маленькие. где userAnsver - переменная
+  var NumberOfCorrectAnswers = 0;
+  answer = answer.toLowerCase();
+  if (answer =="стул" || answer =="табуретка")
+  {
+    alert("Поздравляю! Вы угадали");
+    NumberOfCorrectAnswers++;
+  }
+  else 
+  {
+    alert("К сожалению, ответ неверный ");
+    
+  }
+    answer = prompt("Предлагаем угадать ещё 3 загадки. Висит груша нельзя скушать")
+    answer = answer.toLowerCase();
+    if (answer == "лампочка")
+    {
+      alert("верно");
+      NumberOfCorrectAnswers++;
+    }
+    else
+    {
+      alert("неверно");
+      
+    }
+    answer = prompt("Не огонь, А жжется.")
+    answer = answer.toLowerCase();
+    if (answer == "крапива")
+    {
+      alert("верно");
+      NumberOfCorrectAnswers++;
+    }
+    else
+    {
+      alert("неверно");
+    }
+    answer = prompt("Два конца, два кольца, Посредине гвоздик.")
+    answer = answer.toLowerCase();
+    if (answer == "ножницы")
+    {
+      alert("верно");
+      NumberOfCorrectAnswers++;
+    }
+    else
+    {
+      alert("неверно");
+    }
+
+  alert("колчичество правильных ответов = " + NumberOfCorrectAnswers);
+  </script>
+  
